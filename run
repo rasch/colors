@@ -1,0 +1,35 @@
+#!/bin/sh
+
+PATH=./node_modules/.bin:$PATH
+
+clean() {
+  rm favicon.png
+}
+
+lint() {
+  echo "lint task not implemented"
+}
+
+tests() {
+  echo "test task not implemented"
+}
+
+build() {
+  gm convert favicon.svg favicon.png
+}
+
+start() {
+  darkhttpd . --port "${1:-3001}"
+}
+
+default() {
+  help
+}
+
+help() {
+  echo "$0 <task> <args>"
+  echo "Tasks:"
+  sed -n 's/^\([a-z][a-z_]\+\)() {/\1/p' "$0" | cat -n
+}
+
+"${@:-default}"
