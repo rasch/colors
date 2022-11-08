@@ -4,6 +4,7 @@ PATH=./node_modules/.bin:$PATH
 
 clean() {
   rm favicon.png
+  rm palettes/*.css
 }
 
 lint() {
@@ -16,6 +17,7 @@ tests() {
 
 build() {
   gm convert favicon.svg favicon.png
+  for i in palettes/*.js; do node build.js "$i" > "${i%.js}.css"; done
 }
 
 start() {

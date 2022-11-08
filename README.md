@@ -33,15 +33,18 @@ colors.
 
 ## palettes
 
-| palette                  | description                       |
-| ------------------------ | --------------------------------- |
-| [the-new-defaults][4]    | [The New Defaults][11] are replacements for the standard CSS keyword color system |
-| [chartpak-ad-markers][5] | [Chartpak AD® Markers][1]         |
-| [prismacolor-markers][6] | [Prismacolor® Markers][2]         |
-| [prismacolor-pencils][7] | [Prismacolor® Colored Pencils][2] |
-| [prismacolor-pastels][8] | [Prismacolor® Pastels][2]         |
-| [crayola-crayons][9]     | [Crayola® Crayons][13]            |
-| [css-named-colors][10]   | [CSS named colors][12]            |
+Each color palette is also available as CSS custom properties to import
+into any project.
+
+| palette                  | description                                                                       | CSS custom props |
+| ------------------------ | --------------------------------------------------------------------------------- | ---------------- |
+| [the-new-defaults][4]    | [The New Defaults][11] are replacements for the standard CSS keyword color system | [🎨][14]         |
+| [chartpak-ad-markers][5] | [Chartpak AD® Markers][1]                                                         | [🎨][15]         |
+| [prismacolor-markers][6] | [Prismacolor® Markers][2]                                                         | [🎨][16]         |
+| [prismacolor-pencils][7] | [Prismacolor® Colored Pencils][2]                                                 | [🎨][17]         |
+| [prismacolor-pastels][8] | [Prismacolor® Pastels][2]                                                         | [🎨][18]         |
+| [crayola-crayons][9]     | [Crayola® Crayons][13]                                                            | [🎨][19]         |
+| [css-named-colors][10]   | [CSS named colors][12]                                                            | [🎨][20]         |
 
 [1]: https://www.chartpak.com/admarker
 [2]: https://www.prismacolor.com/
@@ -56,3 +59,10 @@ colors.
 [11]: https://dudleystorey.github.io/thenewdefaults/
 [12]: https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
 [13]: https://www.crayola.com/
+[14]: https://www.rasch.co/palettes/the-new-defaults.css
+[15]: https://www.rasch.co/palettes/chartpak-ad-markers.css
+[16]: https://www.rasch.co/palettes/prismacolor-markers.css
+[17]: https://www.rasch.co/palettes/prismacolor-pencils.css
+[18]: https://www.rasch.co/palettes/prismacolor-pastels.css
+[19]: https://www.rasch.co/palettes/crayola-crayons.css
+[20]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
