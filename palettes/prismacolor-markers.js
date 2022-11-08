@@ -391,7 +391,7 @@ export const colors = [
   {
     name: "ash-grey",
     hex: "#d6ded1",
-    aliases: "ash-gray",
+    aliases: ["ash-gray"],
   },
   {
     name: "driftwood",
