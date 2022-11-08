@@ -23,13 +23,10 @@ const brightness = rgb =>
 // parse :: [Color] -> [Color]
 const parse = colors =>
   colors.map(color => ({
-    name: color.name,
-    hex: color.hex,
-    groups: color.groups?.map(group => group.split(":")),
-    aliases: color.aliases,
-    brightness: brightness(hex2rgb(color.hex)),
+    ...color,
     ...hex2rgb(color.hex),
     ...rgb2hsv(hex2rgb(color.hex)),
+    brightness: brightness(hex2rgb(color.hex)),
   }))
 
 // orderBy :: String -> (Object, Object) -> Integer
