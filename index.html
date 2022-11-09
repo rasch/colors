@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>colors</title>
@@ -7,22 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" href="favicon.png">
-  <style>
-    body { margin: 0; }
-    .colors {
-      display: grid;
-      grid-auto-rows: 11rem;
-      grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
-    }
-    .color-card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .color-card .hex { font-family: monospace; }
-  </style>
+  <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
 </head>
-<body><div id="app" class="colors"></div></body>
+
+<body>
+  <div id="app" class="colors"></div>
+</body>
+
 </html>
