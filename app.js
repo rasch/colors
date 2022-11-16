@@ -91,7 +91,7 @@ const colorDialog = (colors, color) => {
                <li
                  class="swatch"
                  data-hex="${s.hex}"
-                 style="background-color:${s.hex}"
+                 style="${swatchColor(s)}"
                  tabindex="0"
                  title="${s.name}"
                ></li>`)
