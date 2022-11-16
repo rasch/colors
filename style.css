@@ -1,20 +1,143 @@
+:where(html) {
+  --background: #fbfcf7;
+  --border-light: #ddd;
+  --marker-color: #9c7c38;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
+
 body {
   margin: 0;
+  background-color: var(--background);
 }
 
 .colors {
   display: grid;
   grid-auto-rows: 11rem;
   grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  padding: 0;
+  margin: 0;
 }
 
-.color-card {
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; /* for :focus border */
+  text-align: center;
+  cursor: pointer;
+}
+
+.card:focus {
+  border: 3px solid;
+  outline: none;
+}
+
+.card p {
+  margin: 0 1rem;
+}
+
+.hex {
+  font-family: monospace;
+}
+
+dialog {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 768px;
+  max-height: calc(100% - 2rem);
+  padding: 1rem;
+  border: none;
+  background-color: var(--background);
+  font-family: monospace;
+  animation: appear 360ms ease-in 1;
+  box-shadow:
+    0 -2px 5px 0 hsl(220 3% 15% / 3%),
+    0 1px 1px -2px hsl(220 3% 15% / 4%),
+    0 2px 2px -2px hsl(220 3% 15% / 4%),
+    0 5px 5px -2px hsl(220 3% 15% / 5%),
+    0 9px 9px -2px hsl(220 3% 15% / 6%),
+    0 16px 16px -2px hsl(220 3% 15% / 7%);
+}
+
+dialog h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 200px;
+  padding: 1rem;
+  margin: 0;
+  font-size: 2.7rem;
   text-align: center;
 }
 
-.color-card .hex {
-  font-family: monospace;
+dialog h2 {
+  border-bottom: 1px solid var(--border-light);
+}
+
+dialog .hex-color {
+  padding: 0.5rem;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin: 1rem 0 0 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+dialog ul.aliases {
+  font-size: 1.2rem;
+}
+
+dialog ul.aliases li::marker {
+  color: var(--marker-color);
+}
+
+dialog ul.group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 0;
+}
+
+dialog .swatch {
+  box-sizing: border-box; /* for :focus border */
+  width: 32px;
+  height: 32px;
+  border: 1px solid;
+  border-radius: 50%;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+dialog .swatch:focus {
+  border: 4px solid;
+  outline: none;
+}
+
+dialog .close-button:focus {
+  outline: none;
+}
+
+dialog .close-button::before {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  box-sizing: border-box;
+  padding: 0.3rem 0.3rem 0.4rem 0.3rem;
+  border: 2px solid transparent;
+  content: "\2715";
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+}
+
+dialog .close-button:focus::before {
+  border: 2px solid currentColor;
 }
