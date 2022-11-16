@@ -100,7 +100,7 @@ export const colors = [
   {
     name: "red-orange",
     hex: "#ff681f",
-  	aliases: ["ogre-odor"],
+    aliases: ["ogre-odor"],
     groups: ["standard", "silly-scents"],
   },
   {
@@ -124,7 +124,7 @@ export const colors = [
   {
     name: "mango-tango",
     hex: "#e77200",
-  	aliases: ["sunburnt-cyclops"],
+    aliases: ["sunburnt-cyclops"],
     groups: ["standard", "silly-scents"],
   },
   {
@@ -189,7 +189,7 @@ export const colors = [
   {
     name: "spring-green",
     hex: "#ecebbd",
-  	aliases: ["booger-buster"],
+    aliases: ["booger-buster"],
     groups: ["standard", "silly-scents"],
 },
   {
@@ -330,7 +330,7 @@ export const colors = [
   {
     name: "robins-egg-blue",
     hex: "#00cccc",
-  	aliases: ["sea-serpent"],
+    aliases: ["sea-serpent"],
     groups: ["standard", "silly-scents"],
   },
   {
@@ -670,7 +670,7 @@ export const colors = [
   {
     name: "violet-red",
     hex: "#f7468a",
-  	aliases: ["sasquatch-socks"],
+    aliases: ["sasquatch-socks"],
     groups: ["standard", "silly-scents"],
   },
   {
@@ -782,7 +782,7 @@ export const colors = [
   {
     name: "tan",
     hex: "#fa9d5a",
-  	aliases: ["big-foot-feet"],
+    aliases: ["big-foot-feet"],
     groups: ["standard", "multicultural", "silly-scents"],
   },
   {
@@ -1865,7 +1865,7 @@ export const colors = [
     groups: ["heads-n-tails"],
   },
   {
- 	  name: "blue-ribbon",
+    name: "blue-ribbon",
     hex: "#0b10a2",
     groups: ["the-100-billionth-crayon"],
   },
